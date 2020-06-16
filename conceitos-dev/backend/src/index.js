@@ -5,8 +5,10 @@ const app = express();
 //ROTE
 app.get('/', (request, response) => {
    return response.json({
-      message: 'Hello world'
+      message: 'Hello go Gustavo'
    });
 }); 
 
-app.listen(3333); //Porta
+app.listen(3333, () => {
+   console.log('backend started');
+}); //Porta
